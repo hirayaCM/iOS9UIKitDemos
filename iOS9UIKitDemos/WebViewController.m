@@ -26,6 +26,10 @@
     
     self.webView = [WKWebView new];
     
+    // When you elect to position the view using auto layout by adding your own constraints,
+    // you must set this property to NO. IB will do this for you.
+    self.webView.translatesAutoresizingMaskIntoConstraints = NO;
+    
     [self.view addSubview:self.webView];
     
     [self setupConstraints];
@@ -44,10 +48,6 @@
 
 - (void)setupConstraints
 {
-    // When you elect to position the view using auto layout by adding your own constraints,
-    // you must set this property to NO. IB will do this for you.
-    self.webView.translatesAutoresizingMaskIntoConstraints = NO;
-    
     // Creating constraints using Layout Anchors
     [self.webView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
     [self.webView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;

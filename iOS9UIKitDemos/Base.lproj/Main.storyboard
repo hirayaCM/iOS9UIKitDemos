@@ -79,6 +79,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="UEl-jx-k5d" kind="show" id="xjf-4M-gUr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -100,7 +103,15 @@
                 <viewControllerPlaceholder storyboardName="NSLayoutAnchor" id="gjB-ig-ggT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzK-HC-iDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748.5" y="538"/>
+            <point key="canvasLocation" x="1766" y="514"/>
+        </scene>
+        <!--UILayoutGuide-->
+        <scene sceneID="25L-5X-4ih">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UILayoutGuide" id="UEl-jx-k5d" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fu1-uR-kyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="562"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NAb-Gg-a0M">

@@ -14,6 +14,8 @@
 		C9FE292B1BE664A100E05053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE29291BE664A100E05053 /* LaunchScreen.storyboard */; };
 		C9FE29351BE665B000E05053 /* NSLayoutAnchor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE29331BE665B000E05053 /* NSLayoutAnchor.storyboard */; };
 		C9FE29381BE6675B00E05053 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE29371BE6675B00E05053 /* WebViewController.m */; };
+		C9FE293C1BE66CE900E05053 /* UILayoutGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */; };
+		C9FE29401BE66DDC00E05053 /* SpacerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		C9FE29341BE665B000E05053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NSLayoutAnchor.storyboard; sourceTree = "<group>"; };
 		C9FE29361BE6675B00E05053 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		C9FE29371BE6675B00E05053 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		C9FE293B1BE66CE900E05053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UILayoutGuide.storyboard; sourceTree = "<group>"; };
+		C9FE293E1BE66DDC00E05053 /* SpacerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacerViewController.h; sourceTree = "<group>"; };
+		C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 				C9FE291E1BE664A100E05053 /* AppDelegate.h */,
 				C9FE291F1BE664A100E05053 /* AppDelegate.m */,
 				C9FE29391BE668E100E05053 /* NSLayoutAnchor */,
+				C9FE293D1BE66DA000E05053 /* UILayoutGuide */,
 				C9FE29321BE6658F00E05053 /* Storyboards */,
 				C9FE291B1BE664A100E05053 /* Supporting Files */,
 			);
@@ -85,6 +91,7 @@
 				C9FE29291BE664A100E05053 /* LaunchScreen.storyboard */,
 				C9FE29241BE664A100E05053 /* Main.storyboard */,
 				C9FE29331BE665B000E05053 /* NSLayoutAnchor.storyboard */,
+				C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -96,6 +103,15 @@
 				C9FE29371BE6675B00E05053 /* WebViewController.m */,
 			);
 			name = NSLayoutAnchor;
+			sourceTree = "<group>";
+		};
+		C9FE293D1BE66DA000E05053 /* UILayoutGuide */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE293E1BE66DDC00E05053 /* SpacerViewController.h */,
+				C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */,
+			);
+			name = UILayoutGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +175,7 @@
 				C9FE29281BE664A100E05053 /* Assets.xcassets in Resources */,
 				C9FE29351BE665B000E05053 /* NSLayoutAnchor.storyboard in Resources */,
 				C9FE29261BE664A100E05053 /* Main.storyboard in Resources */,
+				C9FE293C1BE66CE900E05053 /* UILayoutGuide.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +188,7 @@
 			files = (
 				C9FE29201BE664A100E05053 /* AppDelegate.m in Sources */,
 				C9FE29381BE6675B00E05053 /* WebViewController.m in Sources */,
+				C9FE29401BE66DDC00E05053 /* SpacerViewController.m in Sources */,
 				C9FE291D1BE664A100E05053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +218,14 @@
 				C9FE29341BE665B000E05053 /* Base */,
 			);
 			name = NSLayoutAnchor.storyboard;
+			sourceTree = "<group>";
+		};
+		C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FE293B1BE66CE900E05053 /* Base */,
+			);
+			name = UILayoutGuide.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

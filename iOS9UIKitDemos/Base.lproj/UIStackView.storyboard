@@ -48,6 +48,37 @@
                                             <segue destination="Aqa-As-gzV" kind="show" id="Npq-7r-CxG"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Gdp-tr-CSp" detailTextLabel="bJO-gJ-77L" style="IBUITableViewCellStyleSubtitle" id="uje-qM-2nC">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uje-qM-2nC" id="Fy1-Il-BXn">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DynamicStackView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gdp-tr-CSp">
+                                                    <rect key="frame" x="15" y="5" width="139" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Change properties with animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bJO-gJ-77L">
+                                                    <rect key="frame" x="15" y="25" width="177" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="0qQ-NR-CSN" kind="show" id="YA3-1G-GqI"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -62,6 +93,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSh-Tg-3f0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1310" y="781"/>
+        </scene>
+        <!--DynamicStackView-->
+        <scene sceneID="vaQ-2y-dgH">
+            <objects>
+                <viewController id="0qQ-NR-CSN" customClass="DynamicStackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zlb-KV-GM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQf-oy-e9U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMB-8g-oHl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enB-g0-J8p">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nTf-9i-N8C"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="ToggleAxis" id="z7T-er-ZS2">
+                                        <connections>
+                                            <action selector="changeAxisButtonDidTouch:" destination="0qQ-NR-CSN" id="3oU-EK-yXz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FH9-MV-ZXh"/>
+                                    <barButtonItem title="remove" id="SJa-3L-LvE">
+                                        <connections>
+                                            <action selector="removeButtonDidTouch:" destination="0qQ-NR-CSN" id="hbs-pO-uuW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="sM5-Ve-I2d"/>
+                                    <barButtonItem title="add" id="Az5-Ld-qGd">
+                                        <connections>
+                                            <action selector="addButtonDidTouch:" destination="0qQ-NR-CSN" id="TO4-CA-Cjg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Po8-eu-BsP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOi-n5-nQU">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="492"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.90196079015731812" green="0.49411764740943909" blue="0.13333334028720856" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFI-JN-kaD">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="492"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.20392157137393951" green="0.59607845544815063" blue="0.85882353782653809" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKT-Jk-gbg">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="492"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.60784316062927246" green="0.3490196168422699" blue="0.7137255072593689" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-2J-LqX">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="492"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.11372549086809158" green="0.82352942228317261" blue="0.68627452850341797" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="enB-g0-J8p" firstAttribute="leading" secondItem="RMB-8g-oHl" secondAttribute="leading" id="FzX-fm-k5u"/>
+                            <constraint firstAttribute="trailing" secondItem="Po8-eu-BsP" secondAttribute="trailing" id="HZq-Bj-vDr"/>
+                            <constraint firstAttribute="trailing" secondItem="enB-g0-J8p" secondAttribute="trailing" id="Km6-sR-LyS"/>
+                            <constraint firstItem="Po8-eu-BsP" firstAttribute="leading" secondItem="RMB-8g-oHl" secondAttribute="leading" id="Og8-cQ-eVf"/>
+                            <constraint firstItem="bQf-oy-e9U" firstAttribute="top" secondItem="enB-g0-J8p" secondAttribute="bottom" id="flo-bP-AGi"/>
+                            <constraint firstItem="Po8-eu-BsP" firstAttribute="top" secondItem="Zlb-KV-GM8" secondAttribute="bottom" id="pgb-3P-HUp"/>
+                            <constraint firstItem="enB-g0-J8p" firstAttribute="top" secondItem="Po8-eu-BsP" secondAttribute="bottom" id="rIp-4o-mQD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DynamicStackView" id="G8s-aK-NZj"/>
+                    <connections>
+                        <outlet property="stackView" destination="Po8-eu-BsP" id="KQs-ol-VmI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsH-Ac-d1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="1519"/>
         </scene>
         <!--Timeline-->
         <scene sceneID="yhb-9Q-ZiQ">

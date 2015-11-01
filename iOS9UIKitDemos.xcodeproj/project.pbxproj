@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94FBAF71BE6C624007BB7CB /* DynamicStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94FBAF61BE6C623007BB7CB /* DynamicStackViewController.m */; };
 		C9FE291D1BE664A100E05053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE291C1BE664A100E05053 /* main.m */; };
 		C9FE29201BE664A100E05053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE291F1BE664A100E05053 /* AppDelegate.m */; };
 		C9FE29261BE664A100E05053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE29241BE664A100E05053 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C94FBAF51BE6C623007BB7CB /* DynamicStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicStackViewController.h; sourceTree = "<group>"; };
+		C94FBAF61BE6C623007BB7CB /* DynamicStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicStackViewController.m; sourceTree = "<group>"; };
 		C9FE29181BE664A100E05053 /* iOS9UIKitDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS9UIKitDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FE291C1BE664A100E05053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9FE291E1BE664A100E05053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +69,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C94FBAF31BE6C4DC007BB7CB /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE29481BE68D5000E05053 /* TimelineViewController.h */,
+				C9FE29491BE68D5000E05053 /* TimelineViewController.m */,
+				C9FE294B1BE68D7500E05053 /* TimelineCell.h */,
+				C9FE294C1BE68D7500E05053 /* TimelineCell.m */,
+				C9FE294E1BE68D8F00E05053 /* TimelineItem.h */,
+				C9FE294F1BE68D8F00E05053 /* TimelineItem.m */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		C94FBAF41BE6C540007BB7CB /* DynamicStackView */ = {
+			isa = PBXGroup;
+			children = (
+				C94FBAF51BE6C623007BB7CB /* DynamicStackViewController.h */,
+				C94FBAF61BE6C623007BB7CB /* DynamicStackViewController.m */,
+			);
+			name = DynamicStackView;
+			sourceTree = "<group>";
+		};
 		C9FE290F1BE664A100E05053 = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +157,9 @@
 		C9FE29471BE68D2F00E05053 /* UIStackView */ = {
 			isa = PBXGroup;
 			children = (
+				C94FBAF41BE6C540007BB7CB /* DynamicStackView */,
+				C94FBAF31BE6C4DC007BB7CB /* Timeline */,
 				C9FE29441BE68C9100E05053 /* UIStackView.storyboard */,
-				C9FE29481BE68D5000E05053 /* TimelineViewController.h */,
-				C9FE29491BE68D5000E05053 /* TimelineViewController.m */,
-				C9FE294B1BE68D7500E05053 /* TimelineCell.h */,
-				C9FE294C1BE68D7500E05053 /* TimelineCell.m */,
-				C9FE294E1BE68D8F00E05053 /* TimelineItem.h */,
-				C9FE294F1BE68D8F00E05053 /* TimelineItem.m */,
 			);
 			name = UIStackView;
 			sourceTree = "<group>";
@@ -242,6 +263,7 @@
 				C9FE29401BE66DDC00E05053 /* SpacerViewController.m in Sources */,
 				C9FE29561BE6938500E05053 /* ImageListViewController.m in Sources */,
 				C9FE29431BE6745A00E05053 /* GroupViewController.m in Sources */,
+				C94FBAF71BE6C624007BB7CB /* DynamicStackViewController.m in Sources */,
 				C9FE294D1BE68D7500E05053 /* TimelineCell.m in Sources */,
 				C9FE291D1BE664A100E05053 /* main.m in Sources */,
 				C9FE294A1BE68D5000E05053 /* TimelineViewController.m in Sources */,
@@ -416,6 +438,7 @@
 				C9FE29311BE664A100E05053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

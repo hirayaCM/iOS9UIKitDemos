@@ -36,6 +36,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="7hh-dD-XzL" kind="show" id="YbD-oN-kyu"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="lyh-t9-ZHP" style="IBUITableViewCellStyleDefault" id="Mp8-zG-dxh">
                                         <rect key="frame" x="0.0" y="108" width="600" height="44"/>
@@ -97,13 +100,21 @@
             </objects>
             <point key="canvasLocation" x="1248" y="538"/>
         </scene>
+        <!--UIStackView-->
+        <scene sceneID="11p-JH-LcL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIStackView" id="7hh-dD-XzL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vM-mQ-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753.5" y="488"/>
+        </scene>
         <!--NSLayoutAnchor-->
         <scene sceneID="U6G-Nt-03z">
             <objects>
                 <viewControllerPlaceholder storyboardName="NSLayoutAnchor" id="gjB-ig-ggT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzK-HC-iDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="514"/>
+            <point key="canvasLocation" x="1766" y="538"/>
         </scene>
         <!--UILayoutGuide-->
         <scene sceneID="25L-5X-4ih">
@@ -111,7 +122,7 @@
                 <viewControllerPlaceholder storyboardName="UILayoutGuide" id="UEl-jx-k5d" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fu1-uR-kyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760" y="562"/>
+            <point key="canvasLocation" x="1760" y="587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NAb-Gg-a0M">

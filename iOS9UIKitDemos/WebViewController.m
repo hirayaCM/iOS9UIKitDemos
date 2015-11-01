@@ -28,6 +28,22 @@
     
     [self.view addSubview:self.webView];
     
+    [self setupConstraints];
+    
+    // load web page
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apple.com/"]];
+    [self.webView loadRequest:request];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Private
+
+- (void)setupConstraints
+{
     // When you elect to position the view using auto layout by adding your own constraints,
     // you must set this property to NO. IB will do this for you.
     self.webView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -38,14 +54,40 @@
     [self.webView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.webView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
     
-    // load web page
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apple.com/"]];
-    [self.webView loadRequest:request];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+    /*
+    // Creating constraints using NSLayoutConstraint
+    [NSLayoutConstraint constraintWithItem:self.webView
+                                 attribute:NSLayoutAttributeLeading
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.view
+                                 attribute:NSLayoutAttributeLeading
+                                multiplier:1.0
+                                  constant:0.0].active = YES;
+    
+    [NSLayoutConstraint constraintWithItem:self.webView
+                                 attribute:NSLayoutAttributeTrailing
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.view
+                                 attribute:NSLayoutAttributeTrailing
+                                multiplier:1.0
+                                  constant:0.0].active = YES;
+    
+    [NSLayoutConstraint constraintWithItem:self.webView
+                                 attribute:NSLayoutAttributeTop
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.view
+                                 attribute:NSLayoutAttributeTop
+                                multiplier:1.0
+                                  constant:0.0].active = YES;
+    
+    [NSLayoutConstraint constraintWithItem:self.webView
+                                 attribute:NSLayoutAttributeBottom
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.view
+                                 attribute:NSLayoutAttributeBottom
+                                multiplier:1.0
+                                  constant:0.0].active = YES;
+     */
 }
 
 @end

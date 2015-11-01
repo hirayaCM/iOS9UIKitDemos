@@ -16,6 +16,7 @@
 		C9FE29381BE6675B00E05053 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE29371BE6675B00E05053 /* WebViewController.m */; };
 		C9FE293C1BE66CE900E05053 /* UILayoutGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */; };
 		C9FE29401BE66DDC00E05053 /* SpacerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */; };
+		C9FE29431BE6745A00E05053 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE29421BE6745A00E05053 /* GroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		C9FE293B1BE66CE900E05053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UILayoutGuide.storyboard; sourceTree = "<group>"; };
 		C9FE293E1BE66DDC00E05053 /* SpacerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacerViewController.h; sourceTree = "<group>"; };
 		C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacerViewController.m; sourceTree = "<group>"; };
+		C9FE29411BE6745A00E05053 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		C9FE29421BE6745A00E05053 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 			children = (
 				C9FE293E1BE66DDC00E05053 /* SpacerViewController.h */,
 				C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */,
+				C9FE29411BE6745A00E05053 /* GroupViewController.h */,
+				C9FE29421BE6745A00E05053 /* GroupViewController.m */,
 			);
 			name = UILayoutGuide;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				C9FE29201BE664A100E05053 /* AppDelegate.m in Sources */,
 				C9FE29381BE6675B00E05053 /* WebViewController.m in Sources */,
 				C9FE29401BE66DDC00E05053 /* SpacerViewController.m in Sources */,
+				C9FE29431BE6745A00E05053 /* GroupViewController.m in Sources */,
 				C9FE291D1BE664A100E05053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

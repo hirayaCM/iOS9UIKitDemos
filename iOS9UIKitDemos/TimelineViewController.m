@@ -69,11 +69,12 @@
     item1.mainText = @"WWDC 2015 was held June 8th through 12th in the Moscone West conference center.";
     item1.mainImage = [UIImage imageNamed:@"1200-1200"];
     
+    // mainImage is nil
     TimelineItem *item2 = [TimelineItem new];
     item2.profileImage = [UIImage imageNamed:@"profile"];
     item2.title = @"Moscone Center";
     item2.mainText = @"Banners are up on the side of the Metreon building.";
-    item2.mainImage = [UIImage imageNamed:@"900-1200"];
+    item2.mainImage = nil;
     
     TimelineItem *item3 = [TimelineItem new];
     item3.profileImage = [UIImage imageNamed:@"profile"];
@@ -81,7 +82,20 @@
     item3.mainText = @"The Apple Campus is the headquarters of Apple Inc.\n1 Infinite Loop, Cupertino, CA 95014";
     item3.mainImage = [UIImage imageNamed:@"1600-1200"];
     
-    self.items = @[ item1, item2, item3 ];
+    TimelineItem *item4 = [TimelineItem new];
+    item4.profileImage = [UIImage imageNamed:@"profile"];
+    item4.title = @"Moscone Center";
+    item4.mainText = @"Banners are up on the side of the Metreon building.";
+    item4.mainImage = [UIImage imageNamed:@"900-1200"];
+    
+    // mainText is nil
+    TimelineItem *item5 = [TimelineItem new];
+    item5.profileImage = [UIImage imageNamed:@"profile"];
+    item5.title = @"Moscone West";
+    item5.mainText = nil;
+    item5.mainImage = [UIImage imageNamed:@"1200-1200"];
+    
+    self.items = @[ item1, item2, item3, item4, item5 ];
 }
 
 @end

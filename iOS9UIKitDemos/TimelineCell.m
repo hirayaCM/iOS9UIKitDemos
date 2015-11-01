@@ -28,6 +28,9 @@
     self.mainImageView.image = self.item.mainImage;
     self.titleLabel.text = self.item.title;
     self.mainTextLabel.text = self.item.mainText;
+    
+    self.mainImageView.hidden = (self.mainImageView.image == nil);
+    self.mainTextLabel.hidden = (self.mainTextLabel.text == nil);
 }
 
 @end

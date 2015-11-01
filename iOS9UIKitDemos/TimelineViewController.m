@@ -73,7 +73,7 @@
     item2.profileImage = [UIImage imageNamed:@"profile"];
     item2.title = @"Moscone Center";
     item2.mainText = @"Banners are up on the side of the Metreon building.";
-    item2.mainImage = nil; //[UIImage imageNamed:@"900-1200"];
+    item2.mainImage = [UIImage imageNamed:@"900-1200"];
     
     TimelineItem *item3 = [TimelineItem new];
     item3.profileImage = [UIImage imageNamed:@"profile"];

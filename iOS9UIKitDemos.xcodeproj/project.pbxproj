@@ -81,10 +81,10 @@
 			children = (
 				C9FE291E1BE664A100E05053 /* AppDelegate.h */,
 				C9FE291F1BE664A100E05053 /* AppDelegate.m */,
+				C9FE29241BE664A100E05053 /* Main.storyboard */,
 				C9FE29471BE68D2F00E05053 /* UIStackView */,
 				C9FE29391BE668E100E05053 /* NSLayoutAnchor */,
 				C9FE293D1BE66DA000E05053 /* UILayoutGuide */,
-				C9FE29321BE6658F00E05053 /* Storyboards */,
 				C9FE291B1BE664A100E05053 /* Supporting Files */,
 			);
 			path = iOS9UIKitDemos;
@@ -93,6 +93,7 @@
 		C9FE291B1BE664A100E05053 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9FE29291BE664A100E05053 /* LaunchScreen.storyboard */,
 				C9FE29271BE664A100E05053 /* Assets.xcassets */,
 				C9FE292C1BE664A100E05053 /* Info.plist */,
 				C9FE291C1BE664A100E05053 /* main.m */,
@@ -100,21 +101,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9FE29321BE6658F00E05053 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				C9FE29291BE664A100E05053 /* LaunchScreen.storyboard */,
-				C9FE29241BE664A100E05053 /* Main.storyboard */,
-				C9FE29331BE665B000E05053 /* NSLayoutAnchor.storyboard */,
-				C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */,
-				C9FE29441BE68C9100E05053 /* UIStackView.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 		C9FE29391BE668E100E05053 /* NSLayoutAnchor */ = {
 			isa = PBXGroup;
 			children = (
+				C9FE29331BE665B000E05053 /* NSLayoutAnchor.storyboard */,
 				C9FE29361BE6675B00E05053 /* WebViewController.h */,
 				C9FE29371BE6675B00E05053 /* WebViewController.m */,
 			);
@@ -124,6 +114,7 @@
 		C9FE293D1BE66DA000E05053 /* UILayoutGuide */ = {
 			isa = PBXGroup;
 			children = (
+				C9FE293A1BE66CE900E05053 /* UILayoutGuide.storyboard */,
 				C9FE293E1BE66DDC00E05053 /* SpacerViewController.h */,
 				C9FE293F1BE66DDC00E05053 /* SpacerViewController.m */,
 				C9FE29411BE6745A00E05053 /* GroupViewController.h */,
@@ -135,6 +126,7 @@
 		C9FE29471BE68D2F00E05053 /* UIStackView */ = {
 			isa = PBXGroup;
 			children = (
+				C9FE29441BE68C9100E05053 /* UIStackView.storyboard */,
 				C9FE29481BE68D5000E05053 /* TimelineViewController.h */,
 				C9FE29491BE68D5000E05053 /* TimelineViewController.m */,
 				C9FE294B1BE68D7500E05053 /* TimelineCell.h */,
